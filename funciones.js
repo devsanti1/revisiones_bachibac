@@ -72,7 +72,7 @@ export function flashcardsPlayground(cid) {
 
   fs.map((x) => {
     fsID.push(x.id)
-    flashcardsHTML += `<button id="${x.id}" onclick="f.voltear();this.classList.toggle('flipped')" class="flashcard btn bg-primary-subtle rounded-0 w-100 h-100 d-none pregunta">${x.pregunta}</button>`
+    flashcardsHTML += `<button id="${x.id}" onclick="f.voltear();this.classList.toggle('flipped')" class="flashcard py-5 btn bg-primary-subtle rounded-0 w-100 h-100 d-none pregunta">${x.pregunta}</button>`
   })
 
   playground.innerHTML = `
@@ -90,7 +90,7 @@ export function flashcardsPlayground(cid) {
           <span class="small" id="message">Toca para ver respuesta</span>
         </div>
       </div>
-      <div class="card-body p-0">
+      <div class="card-body p-0 h-100">
         ${flashcardsHTML}
       </div>
       <div class="card-footer">
