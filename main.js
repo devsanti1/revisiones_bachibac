@@ -1,3 +1,3 @@
-import * as f from "/funciones.js";
+import * as f from "/revisiones_bachibac/funciones.js";
 
 window.f = f
