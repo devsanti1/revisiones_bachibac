@@ -137,7 +137,7 @@ export function siguiente() {
       <div class="card-body p-0">
         <div class="col align-content-center w-100 h-100 bg-success-subtle text-success-emphasis text-center">
           <i class="fa fa-check fa-3x my-3"></i>
-          <h1>Terminaste capitulo blablabla</h1>
+          <h1>Terminaste capitulo ${capitulos.filter((x) => { return x.id === flashcards.filter((x) => { return x.id === fsID[0] })[0].id })[0].nombre}</h1>
         </div>
       </div>
       <div class="card-footer">
