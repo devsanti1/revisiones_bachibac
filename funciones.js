@@ -1,6 +1,6 @@
 async function cargarDatos() {
   try {
-    const res = await fetch("/data.json");
+    const res = await fetch("/revisiones_bachibac/data.json");
     const data = await res.json();
     console.log(data);
     return data
