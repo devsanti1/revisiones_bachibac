@@ -12,7 +12,7 @@ async function cargarDatos() {
 
 const data = await cargarDatos();
 
-const materias = data.materias.filter((m) => { return (m.codigo === "HG" || m.codigo === "ES") })
+const materias = data.materias.filter((m) => { return (m.codigo === "HG") })
 const capitulos = data.capitulos.filter((c) => { return materias.some(m => m.id === c.materiaId) })
 const flashcards = data.tarjetas.filter((f) => { return capitulos.some(c => c.id === f.capituloId) })
 const playground = document.getElementById("playground")
